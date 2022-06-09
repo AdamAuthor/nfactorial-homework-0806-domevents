@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+    <!-- 
+        AdamAuthor player
+        v0.0.1
+        Создан для рока, но играет попсу (терпеть её не могу) 
+    -->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROCK!!!!</title>
+    <link rel="stylesheet" href="rock.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"/>
+</head>
+
+<body>
+    <div class="background">
+        <video autoplay muted loop id = "backgroundVideo">
+            <source src="resources/back.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="player">
+        <div class="cover">
+            <img id="thumbnail" src="https://i.ibb.co/7RhfRBZ/Fine-Line-Harry-Styles.jpg" alt="">
+            <audio id="track" src="https://res.cloudinary.com/cbanlawi/video/upload/v1614140796/HarryStyles-WatermelonSugar_f5471p.mp3"></audio>
+        </div>
+
+        <div class="track-info">
+            <div id="track-artist">Harry Styles</div>
+            <div id="track-title">Watermelon Sugar</div>
+        </div>
+
+        <div class="box">
+            <div class="progres">
+                <input type="range" id="progressBar" min="0" max="">
+            </div>
+
+            <div class="track-time">
+                <div id="currentTime"></div>
+            </div>
+            
+            <div class="play-pause">
+              <i class="far fa-arrow-alt-circle-left fa-5x" id="prev-track"></i>
+              <i class="far fa-play-circle fa-7x" id="play"></i>
+              <i class="far fa-pause-circle fa-7x" id="pause"></i>
+              <i class="far fa-arrow-alt-circle-right fa-5x" id="next-track"></i>
+            </div>
+
+        </div>
+    </div>
+    <script src="rock.js"></script>
+</body>
+</html>
